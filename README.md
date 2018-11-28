@@ -49,7 +49,7 @@ git remote add origin <server>
 如此你就能够将你的改动推送到所添加的服务器上去了。
 
 # 分支
-分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支上。
+分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支。
 ![分支](https://github.com/Microstrong0305/git-guide/blob/master/branch.png)
 创建一个叫做“feature_x”的分支，并切换过去：
 ```bash
