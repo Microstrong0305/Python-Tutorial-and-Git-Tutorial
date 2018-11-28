@@ -20,7 +20,7 @@ git clone usernamr@host:/path/to/repository
 
 # 工作流
 你的本地仓库由git维护的三颗“树”组成。第一个是你的《工作目录》，它持有实际文件；第二个是《缓存区（Index）》，它像个缓存区域，临时保存你的改动；最后是《HEAD》，指向你最近一次提交后的结果。
-![工作流]([git-guide/workflow.png])
+![工作流](git-guide/workflow.png)
 
 # 添加与提交
 你可以计划改动（把它们添加到缓存区），使用如下命令：
