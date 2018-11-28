@@ -66,6 +66,7 @@ git branch -d feature_x
 除非你将分支推送到远端仓库，不然该分支就是 不为他人所见的：
 ```bash
 git push origin <branch>
+```
 
 # 更新与合并
 要更新你的本地仓库至最新改动，执行：
