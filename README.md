@@ -1,14 +1,37 @@
-﻿# git-guide
+﻿# gitHub设置添加SSH
+
+## 设置git的user name 和 email
+```bash
+ $ git config --global user.name "Microstrong"
+ $ git config --global user.email "Microstrong@qq.com"
+```
+## 生成ssh
+```bash
+$ ssh-keygen -t rsa -C "Microstrong@qq.com"
+```
+代码参数含义：
+-t 指定密钥类型，默认是 rsa ，可以省略。
+-C 设置注释文字，比如邮箱。
+-f 指定密钥文件存储文件名。
+
+## 配置git的ssh key
+点击GitHub中的Add SSH key 按钮添加一个 SSH key 。把你复制的 SSH key 代码粘贴到 key 所对应的输入框中，记得 SSH key 代码的前后不要留有空格或者回车。当然，上面的 Title 所对应的输入框你也可以输入一个该 SSH key 显示在 github 上的一个别名。默认的会使用你的邮件名称。
+
+## Reference
+1. [github设置添加SSH](https://www.cnblogs.com/ayseeing/p/3572582.html)
+2. [SSH连接GitHub、GitHub配置ssh key](https://blog.csdn.net/u012373815/article/details/53575362)
+
+# git-guide
 git-guide
 
-# 创建新仓库
+## 创建新仓库
 创建新文件夹，打开，然后执行
 ```bash 
 git init
 ```
 以创建新的git仓库。
 
-# 检出仓库
+## 检出仓库
 执行如下命令以创建一个本地仓库的克隆版本：
 ```bash
 git clone /path/to/repository
@@ -18,13 +41,11 @@ git clone /path/to/repository
 git clone usernamr@host:/path/to/repository
 ```
 
-# 工作流
+## 工作流
 你的本地仓库由git维护的三颗“树”组成。第一个是你的《工作目录》，它持有实际文件；第二个是《缓存区（Index）》，它像个缓存区域，临时保存你的改动；最后是《HEAD》，指向你最近一次提交后的结果。
 ![工作流](https://github.com/Microstrong0305/git-guide/blob/master/workflow.png)
 
-
-
-# 添加与提交
+## 添加与提交
 你可以计划改动（把它们添加到缓存区），使用如下命令：
 ```bash
 git add <filename>
@@ -36,7 +57,10 @@ git commit -m "代码提交信息"
 ```
 现在，你的改动已经提交到了HEAD,但是还没到你的远端仓库。
 
-# 推送改动
+## git 删除文件
+[git 删除文件](https://www.jianshu.com/p/c3ff8f0da85e)
+
+## 推送改动
 你的改动现在已经在本地仓库的HEAD中了。执行如下命令以将这些改动提交到远端仓库：
 ```bash
 git push origin master
@@ -48,7 +72,7 @@ git remote add origin <server>
 ```
 如此你就能够将你的改动推送到所添加的服务器上去了。
 
-# 分支
+## 分支
 分支是用来将特性开发绝缘开来的。在你创建仓库的时候，master是“默认的”。在其他分支上进行开发，完成后再将它们合并到主分支。
 ![分支](https://github.com/Microstrong0305/git-guide/blob/master/branch.png)
 创建一个叫做“feature_x”的分支，并切换过去：
@@ -68,7 +92,7 @@ git branch -d feature_x
 git push origin <branch>
 ```
 
-# 更新与合并
+## 更新与合并
 要更新你的本地仓库至最新改动，执行：
 ```bash
 git pull
@@ -87,7 +111,7 @@ git add <filename>
 git diff <source_branch> <target_branch>
 ```
 
-# 标签
+## 标签
 在软件发布时创建标签，是被推荐的。这是个旧有概念，在 SVN 中也有。可以执行如下命令以创建一个叫做 1.0.0 的标签：
 ```bash
 git tag 1.0.0 1b2e1d63ff
@@ -98,7 +122,7 @@ git log
 ```
 你也可以用该提交 ID 的少一些的前几位，只要它是唯一的。
 
-# 替换本地改动
+## 替换本地改动
 假如你做错事（自然，这是不可能的），你可以使用如下命令替换掉本地改动：
 ```bash
 git checkout -- <filename>
@@ -110,4 +134,4 @@ git checkout -- <filename>
 git fetch origin
 git reset --hard origin/master
 ```
-# [git - 简易指南](http://www.bootcss.com/p/git-guide/)
+## [git - 简易指南](http://www.bootcss.com/p/git-guide/)
