@@ -135,3 +135,4 @@ git fetch origin
 git reset --hard origin/master
 ```
 ## [git - 简易指南](http://www.bootcss.com/p/git-guide/)
+## [好文推荐，20 分钟教你搞懂 Git！](https://mp.weixin.qq.com/s/q8k4LYPfJVF3NFwul2wRpg)
