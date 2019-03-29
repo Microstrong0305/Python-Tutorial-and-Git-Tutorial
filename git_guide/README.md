@@ -1,5 +1,6 @@
 ﻿# gitHub设置添加SSH
 
+图片来源：[AI有道公众号：Git 常用命令速查表](https://mp.weixin.qq.com/s/mZ7H2z8CcUuohqEGu_FoGQ)
 ![Git常用命令速查表](https://github.com/Microstrong0305/Python-Tutorial-and-Git-Tutorial/blob/master/git_guide/GitSheet.jpg)
 
 ## 设置git的user name 和 email
