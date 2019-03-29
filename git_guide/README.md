@@ -1,5 +1,7 @@
 ﻿# gitHub设置添加SSH
 
+![Git常用命令速查表](https://github.com/Microstrong0305/Python-Tutorial-and-Git-Tutorial/blob/master/git_guide/GitSheet.jpg)
+
 ## 设置git的user name 和 email
 ```bash
  $ git config --global user.name "Microstrong"
