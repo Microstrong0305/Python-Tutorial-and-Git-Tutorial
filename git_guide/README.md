@@ -8,6 +8,11 @@
  $ git config --global user.name "Microstrong"
  $ git config --global user.email "Microstrong@qq.com"
 ```
++ 我们可以通过下面命令查看是否正确配置
+```bash
+git config --list
+```
+
 ## 生成ssh
 ```bash
 $ ssh-keygen -t rsa -C "Microstrong@qq.com"
